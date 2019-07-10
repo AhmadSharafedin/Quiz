@@ -37,10 +37,26 @@ isMyAgeAndExpEnough(35,1)
 =>"you need more exp"
 */
 
+function isMyAgeAndExpEnough(age, exp) {
+if (age>=25 && age<30 && exp>=5)
+
+return "you are awesome"
 
 
+if (age>=30 && exp>=5)
+return "you are goood"
 
 
+if (age>=25 && exp<5 && exp>2)
+return "dont worry you need to work on your self more "
+
+
+if (age<=24 )
+return "you still young"
+
+if (exp<=2)
+return "you need more exp"
+}
 
 
 
@@ -50,7 +66,7 @@ Write a function called countDown
 that takes one parameter
 and return a string represent the count down from the number
 that insert to 0
-instead of 0 need to ahve "done"
+instead of 0 need to have "done"
 between each number a comma and space
 ** you need to use recursion
 
@@ -67,6 +83,13 @@ countDown(7)
 
 */
 
+function countDown(num){
+    if (num === 0)
+    return "done";
+
+    return num + "," + " " + countDown(num-1)
+
+}
 
 
 
